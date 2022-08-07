@@ -1,0 +1,7 @@
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\A15\bin\Debug\A15.exe.config
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\A15\bin\Debug\A15.exe
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\A15\bin\Debug\A15.pdb
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\A15\obj\Debug\A15.csproj.AssemblyReference.cache
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\A15\obj\Debug\A15.csproj.CoreCompileInputs.cache
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\A15\obj\Debug\A15.exe
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\A15\obj\Debug\A15.pdb

@@ -1,0 +1,7 @@
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\D1\obj\Debug\D1.csproj.AssemblyReference.cache
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\D1\obj\Debug\D1.csproj.CoreCompileInputs.cache
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\D1\bin\Debug\D1.exe.config
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\D1\bin\Debug\D1.exe
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\D1\bin\Debug\D1.pdb
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\D1\obj\Debug\D1.exe
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\D1\obj\Debug\D1.pdb

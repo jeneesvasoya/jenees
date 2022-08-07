@@ -1,0 +1,64 @@
+﻿@model IEnumerable<project1.EDM.Doctor>
+@{
+    ViewBag.Title = "FindDoc";
+    Layout = "~/Areas/users/Views/Shared/user_LayoutPage1.cshtml";
+}
+
+
+
+
+
+<script>
+    function BookByDoctor(docid, hosid) {
+        $.ajax({
+            url: "/users/jd/FindDoc",
+            type: "POST",
+            data: { docid: docid, hosid: hosid },
+            dataType: "text",
+            success: function () {
+               
+            }
+
+        });
+
+    }
+</script>
+
+
+<div class="products">
+    <div class="container">
+        <div class="col-md-12 products-right">
+            <div class="agile_top_brands_grids">
+                @foreach (var item in Model)
+                {
+                    <div class="col-md-3 top_brand_left" style="margin-top:50px">
+                        <div class="hover14 column">
+                            <div class="agile_top_brand_left_grid">*
+                                <div class="agile_top_brand_left_grid_pos">
+
+                                </div>
+                                <div class="agile_top_brand_left_grid1">
+                                    <figure>
+                                        <div class="team-grid text-center">
+                                            <img src="~/Docs/doctors/@item.d_profile_image" alt="image" class="img-responsive" style="height:200px;width:200px" />
+                                            <br />
+                                            <h5 style="font-weight:bold">@item.df_name @item.dl_name</h5>
+                                            <br />
+                                            <h5 style="font-weight:bold">Degree : @item.Degree.Degree_name</h5>  <br />
+                                            <h6 style="font-weight:bold">Speciality :@item.speciality.speciality_name</h6>
+                                            <br />
+                                            <span> <a href="/users/jd/Appo" onclick="BookByDoctor(@item.doctor_id,@item.hospital_id)" class="btn btn-warning">Appointment</a></span>
+                                        </div>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+                <div class="clearfix"> </div>
+            </div>
+
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>

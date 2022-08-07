@@ -1,0 +1,101 @@
+﻿@model project1.EDM.Doctor
+
+@{
+    ViewBag.Title = "AddDoc";
+    Layout = "~/Areas/hospitaladmin/Views/Shared/hospital_LayoutPage1.cshtml";
+}
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+
+<h2>AddDoc</h2>
+
+<div class="container">
+    <div class="col-md-6">
+        @using (Html.BeginForm("AddDoc", "ho", FormMethod.Post, new { @id = "form", @enctype = "multipart/form-data" }))
+        {
+            @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            <h4>Doctor</h4>
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.df_name, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(model => model.df_name, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.df_name, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.dl_name, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(model => model.dl_name, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.dl_name, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.d_email, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(model => model.d_email, new { @class = "form-control", @type = "email" })
+                    @Html.ValidationMessageFor(model => model.d_email, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.dc_number, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(model => model.dc_number, new { @class = "form-control", @type = "number" })
+                    @Html.ValidationMessageFor(model => model.dc_number, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Degree_id, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DropDownListFor(model => model.Degree_id, ViewBag.degree as List<SelectListItem>, "---Select Degree", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.Degree_id, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.speciality_id, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DropDownListFor(model => model.speciality_id, ViewBag.speciality as List<SelectListItem>, "--Select Speciality--", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.speciality_id, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.hospital_id, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DropDownListFor(model => model.hospital_id, ViewBag.hospital as List<SelectListItem>, "--Select Hospital--", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.hospital_id, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.d_profile_image, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    <input type="file" name="d_profile_image" id="d_profile_image" class="form-control" />
+                    @Html.ValidationMessageFor(model => model.d_profile_image, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Create" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+        }
+
+        <div>
+            @Html.ActionLink("Back to List", "ManageDoc")
+        </div>
+
+    </div>
+</div>

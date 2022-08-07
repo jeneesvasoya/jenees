@@ -1,0 +1,78 @@
+﻿@model IEnumerable<project1.EDM.Appointment>
+
+@{
+    ViewBag.Title = "ManageAppointment";
+    Layout = "~/Areas/users/Views/Shared/user_LayoutPage1.cshtml";
+}
+
+<script>
+    function Deleteappo(id) {
+        if (confirm("Are you sure you want to delete this?")) {
+            $.ajax({
+                url: "/users/jd/Delete/" + id,
+                type: "GET",
+                success: function (data) {
+                    alert(data);
+                    window.location.href = "/users/jd/ManageAppointment";
+                }
+            });
+        }
+        else {
+            return false;
+        }
+    }
+</script>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.appointment_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.a_date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Hospital.h_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Doctor.df_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Patient.pf_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.appointment_status)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.appointment_id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.a_date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Hospital.h_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Doctor.df_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Patient.pf_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.appointment_status)
+            </td>
+            <td>
+
+                <button type="button" onclick="Deleteappo(@item.appointment_id)" class="btn btn-info">Delete</button>
+            </td>
+        </tr>
+    }
+
+</table>

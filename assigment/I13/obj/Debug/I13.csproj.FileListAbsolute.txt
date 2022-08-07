@@ -1,0 +1,7 @@
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I13\bin\Debug\I13.exe.config
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I13\bin\Debug\I13.exe
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I13\bin\Debug\I13.pdb
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I13\obj\Debug\I13.csproj.CoreCompileInputs.cache
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I13\obj\Debug\I13.exe
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I13\obj\Debug\I13.pdb
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I13\obj\Debug\I13.csproj.AssemblyReference.cache

@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "svr";
+}
+
+<h2>svr</h2>
+
+<h3>@ViewData["info"]</h3>
+<h3>@ViewBag.msg</h3>
+<h3>@*@TempData.Peek("data")*@</h3>
+<h3>@TempData["data"]</h3>
+
+<p>
+    @{ 
+        TempData.Keep("data");
+    }
+</p>
+
+
+
+<a href="/jd/second">goto second</a>

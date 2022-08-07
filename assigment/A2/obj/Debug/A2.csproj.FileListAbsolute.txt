@@ -1,0 +1,6 @@
+C:\Users\MAHADEV\source\repos\assigment\A2\bin\Debug\A2.exe.config
+C:\Users\MAHADEV\source\repos\assigment\A2\bin\Debug\A2.exe
+C:\Users\MAHADEV\source\repos\assigment\A2\bin\Debug\A2.pdb
+C:\Users\MAHADEV\source\repos\assigment\A2\obj\Debug\A2.csproj.CoreCompileInputs.cache
+C:\Users\MAHADEV\source\repos\assigment\A2\obj\Debug\A2.exe
+C:\Users\MAHADEV\source\repos\assigment\A2\obj\Debug\A2.pdb

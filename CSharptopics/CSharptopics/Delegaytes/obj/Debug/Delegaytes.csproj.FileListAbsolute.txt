@@ -1,0 +1,6 @@
+C:\Users\MAHADEV\Desktop\jd_mahadev\jd\CSharptopics\CSharptopics\Delegaytes\bin\Debug\Delegaytes.exe.config
+C:\Users\MAHADEV\Desktop\jd_mahadev\jd\CSharptopics\CSharptopics\Delegaytes\bin\Debug\Delegaytes.exe
+C:\Users\MAHADEV\Desktop\jd_mahadev\jd\CSharptopics\CSharptopics\Delegaytes\bin\Debug\Delegaytes.pdb
+C:\Users\MAHADEV\Desktop\jd_mahadev\jd\CSharptopics\CSharptopics\Delegaytes\obj\Debug\Delegaytes.csproj.CoreCompileInputs.cache
+C:\Users\MAHADEV\Desktop\jd_mahadev\jd\CSharptopics\CSharptopics\Delegaytes\obj\Debug\Delegaytes.exe
+C:\Users\MAHADEV\Desktop\jd_mahadev\jd\CSharptopics\CSharptopics\Delegaytes\obj\Debug\Delegaytes.pdb

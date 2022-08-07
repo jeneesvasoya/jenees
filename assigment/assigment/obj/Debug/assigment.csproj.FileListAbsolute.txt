@@ -1,0 +1,7 @@
+C:\Users\MAHADEV\source\repos\assigment\assigment\bin\Debug\assigment.exe.config
+C:\Users\MAHADEV\source\repos\assigment\assigment\bin\Debug\assigment.exe
+C:\Users\MAHADEV\source\repos\assigment\assigment\bin\Debug\assigment.pdb
+C:\Users\MAHADEV\source\repos\assigment\assigment\obj\Debug\assigment.csproj.AssemblyReference.cache
+C:\Users\MAHADEV\source\repos\assigment\assigment\obj\Debug\assigment.csproj.CoreCompileInputs.cache
+C:\Users\MAHADEV\source\repos\assigment\assigment\obj\Debug\assigment.exe
+C:\Users\MAHADEV\source\repos\assigment\assigment\obj\Debug\assigment.pdb

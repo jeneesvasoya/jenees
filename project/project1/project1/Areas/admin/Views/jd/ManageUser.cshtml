@@ -1,0 +1,91 @@
+﻿@model IEnumerable<project1.EDM.Patient>
+
+@{
+    ViewBag.Title = "ManageUser";
+    Layout = "~/Areas/admin/Views/Shared/admin_LayoutPage1.cshtml";
+}
+
+<h2>ManageUser</h2>
+<br />
+<br />
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.patient_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pf_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pl_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.p_email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pc_number)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.p_address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.p_password)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.state_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.city_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.p_profile_image)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.p_gender)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.patient_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pf_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pl_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.p_email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pc_number)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.p_address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.p_password)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.State.state_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.City.city_name)
+        </td>
+        <td>
+            <img src="~/Docs/@item.p_profile_image" height="80" width="50" />
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.p_gender)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "UserEdit", new {  id=item.patient_id }) |
+            @Html.ActionLink("Delete", "UserDelete", new {  id=item.patient_id })
+        </td>
+    </tr>
+}
+
+</table>

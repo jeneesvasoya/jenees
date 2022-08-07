@@ -1,0 +1,7 @@
+C:\Users\MAHADEV\source\repos\assigment\B16\bin\Debug\B16.exe.config
+C:\Users\MAHADEV\source\repos\assigment\B16\bin\Debug\B16.exe
+C:\Users\MAHADEV\source\repos\assigment\B16\bin\Debug\B16.pdb
+C:\Users\MAHADEV\source\repos\assigment\B16\obj\Debug\B16.csproj.AssemblyReference.cache
+C:\Users\MAHADEV\source\repos\assigment\B16\obj\Debug\B16.csproj.CoreCompileInputs.cache
+C:\Users\MAHADEV\source\repos\assigment\B16\obj\Debug\B16.exe
+C:\Users\MAHADEV\source\repos\assigment\B16\obj\Debug\B16.pdb

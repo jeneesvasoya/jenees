@@ -1,0 +1,7 @@
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\D3\bin\Debug\D3.exe.config
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\D3\bin\Debug\D3.exe
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\D3\bin\Debug\D3.pdb
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\D3\obj\Debug\D3.csproj.AssemblyReference.cache
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\D3\obj\Debug\D3.csproj.CoreCompileInputs.cache
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\D3\obj\Debug\D3.exe
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\D3\obj\Debug\D3.pdb

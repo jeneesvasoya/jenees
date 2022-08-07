@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="employeedetailsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="companydetails">
+          <Key>
+            <PropertyRef Name="companyid" />
+          </Key>
+          <Property Name="companyid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="empid" Type="int" />
+          <Property Name="company_name" Type="varchar" MaxLength="50" />
+          <Property Name="company_location" Type="varchar" MaxLength="50" />
+          <Property Name="company_city" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="employee">
+          <Key>
+            <PropertyRef Name="empid" />
+          </Key>
+          <Property Name="empid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="fname" Type="varchar" MaxLength="50" />
+          <Property Name="email" Type="varchar" MaxLength="50" />
+          <Property Name="salary" Type="int" />
+          <Property Name="address" Type="varchar" MaxLength="50" />
+          <Property Name="hobbies" Type="nchar" MaxLength="10" />
+          <Property Name="city" Type="varchar" MaxLength="50" />
+          <Property Name="pincode" Type="int" />
+        </EntityType>
+        <Association Name="FK_companydetails_employee1">
+          <End Role="employee" Type="Self.employee" Multiplicity="0..1" />
+          <End Role="companydetails" Type="Self.companydetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="employee">
+              <PropertyRef Name="empid" />
+            </Principal>
+            <Dependent Role="companydetails">
+              <PropertyRef Name="empid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="employeedetailsModelStoreContainer">
+          <EntitySet Name="companydetails" EntityType="Self.companydetails" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="employee" EntityType="Self.employee" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_companydetails_employee1" Association="Self.FK_companydetails_employee1">
+            <End Role="employee" EntitySet="employee" />
+            <End Role="companydetails" EntitySet="companydetails" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="employeedetailsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="companydetail">
+          <Key>
+            <PropertyRef Name="companyid" />
+          </Key>
+          <Property Name="companyid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="empid" Type="Int32" />
+          <Property Name="company_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="company_location" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="company_city" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="employee" Relationship="Self.FK_companydetails_employee1" FromRole="companydetails" ToRole="employee" />
+        </EntityType>
+        <EntityType Name="employee">
+          <Key>
+            <PropertyRef Name="empid" />
+          </Key>
+          <Property Name="empid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="fname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="salary" Type="Int32" />
+          <Property Name="address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="hobbies" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="city" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="pincode" Type="Int32" />
+          <NavigationProperty Name="companydetails" Relationship="Self.FK_companydetails_employee1" FromRole="employee" ToRole="companydetails" />
+        </EntityType>
+        <Association Name="FK_companydetails_employee1">
+          <End Role="employee" Type="Self.employee" Multiplicity="0..1" />
+          <End Role="companydetails" Type="Self.companydetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="employee">
+              <PropertyRef Name="empid" />
+            </Principal>
+            <Dependent Role="companydetails">
+              <PropertyRef Name="empid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="employeedetailsEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="companydetails" EntityType="Self.companydetail" />
+          <EntitySet Name="employees" EntityType="Self.employee" />
+          <AssociationSet Name="FK_companydetails_employee1" Association="Self.FK_companydetails_employee1">
+            <End Role="employee" EntitySet="employees" />
+            <End Role="companydetails" EntitySet="companydetails" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="employeedetailsModelStoreContainer" CdmEntityContainer="employeedetailsEntities">
+          <EntitySetMapping Name="companydetails">
+            <EntityTypeMapping TypeName="employeedetailsModel.companydetail">
+              <MappingFragment StoreEntitySet="companydetails">
+                <ScalarProperty Name="companyid" ColumnName="companyid" />
+                <ScalarProperty Name="empid" ColumnName="empid" />
+                <ScalarProperty Name="company_name" ColumnName="company_name" />
+                <ScalarProperty Name="company_location" ColumnName="company_location" />
+                <ScalarProperty Name="company_city" ColumnName="company_city" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="employees">
+            <EntityTypeMapping TypeName="employeedetailsModel.employee">
+              <MappingFragment StoreEntitySet="employee">
+                <ScalarProperty Name="empid" ColumnName="empid" />
+                <ScalarProperty Name="fname" ColumnName="fname" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="salary" ColumnName="salary" />
+                <ScalarProperty Name="address" ColumnName="address" />
+                <ScalarProperty Name="hobbies" ColumnName="hobbies" />
+                <ScalarProperty Name="city" ColumnName="city" />
+                <ScalarProperty Name="pincode" ColumnName="pincode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

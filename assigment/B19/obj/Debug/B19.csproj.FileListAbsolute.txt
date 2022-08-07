@@ -1,0 +1,7 @@
+C:\Users\MAHADEV\source\repos\assigment\B19\bin\Debug\B19.exe.config
+C:\Users\MAHADEV\source\repos\assigment\B19\bin\Debug\B19.exe
+C:\Users\MAHADEV\source\repos\assigment\B19\bin\Debug\B19.pdb
+C:\Users\MAHADEV\source\repos\assigment\B19\obj\Debug\B19.csproj.AssemblyReference.cache
+C:\Users\MAHADEV\source\repos\assigment\B19\obj\Debug\B19.csproj.CoreCompileInputs.cache
+C:\Users\MAHADEV\source\repos\assigment\B19\obj\Debug\B19.exe
+C:\Users\MAHADEV\source\repos\assigment\B19\obj\Debug\B19.pdb

@@ -1,0 +1,94 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Sanatorium a Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <!-- default-css-files -->
+    <link href="~/Areas/users/web/css/bootstrap.css" rel='stylesheet' type='text/css' />
+
+    <link rel="stylesheet" href="~/Areas/users/web/css/flexslider.css" type="text/css" media="screen" />
+    <link href="~/Areas/users/web/css/font-awesome.css" rel="stylesheet" type="text/css" media="all">
+    <!-- default-css-files -->
+    <!-- Online fonts -->
+    <link href="//fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
+    <!-- //Online fonts -->
+    <!-- style.css-file -->
+    <link href="~/Areas/users/web/css/style.css" rel='stylesheet' type='text/css' />
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div id="small-dialog1" class="mfp-hide book-form">
+
+                    <h3>User Login </h3>
+                    @using (Html.BeginForm())
+                    {
+                        <input type="email" id="email" name="email" class="Email" placeholder="Email" required="" />
+                        <input type="password" id="password" name="password" class="password" placeholder="Password" required="" />
+                        <br />
+                        <p>
+                            <span id="errormsg" class="text-danger">@ViewBag.loginerror</span>
+                        </p>
+                        <br />
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="brand1" value="">
+                                <label for="brand1"><span></span>Remember me</label>
+                            </li>
+                        </ul>
+                        <a href="#">Forgot Password?</a><br>
+                        <div class="clearfix"></div>
+                        <input type="button" id="btn" value="Sign In">
+
+                    }
+
+                    <p class="text-justify"> <a href="/users/jd/Index">Back To Menu</a></p>
+
+                    <div class="top-middle w3ls-sma">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    $(document).ready(function () {
+        $("#btn").click(function () {
+            $.ajax({
+                url: "/users/jd/Login",
+                type: "POST",
+                data: { email: $("#email").val(), password: $("#password").val() },
+                dataType: "text",
+                success: function (data) {
+                    if (data == "1") {
+                        alert("login successfully..");
+                        window.location.href = "/users/jd/Index";
+                    }
+                    else if (data == "0") {
+                        $("#errormsg").text("Invalid EmailId Or Password..!");
+                    }
+                }
+            });
+        });
+    });
+</script>

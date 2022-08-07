@@ -1,0 +1,6 @@
+C:\Users\MAHADEV\Desktop\jd_mahadev\jd\CSharptopics\CSharptopics\propertiess\bin\Debug\propertiess.exe.config
+C:\Users\MAHADEV\Desktop\jd_mahadev\jd\CSharptopics\CSharptopics\propertiess\bin\Debug\propertiess.exe
+C:\Users\MAHADEV\Desktop\jd_mahadev\jd\CSharptopics\CSharptopics\propertiess\bin\Debug\propertiess.pdb
+C:\Users\MAHADEV\Desktop\jd_mahadev\jd\CSharptopics\CSharptopics\propertiess\obj\Debug\propertiess.csproj.CoreCompileInputs.cache
+C:\Users\MAHADEV\Desktop\jd_mahadev\jd\CSharptopics\CSharptopics\propertiess\obj\Debug\propertiess.exe
+C:\Users\MAHADEV\Desktop\jd_mahadev\jd\CSharptopics\CSharptopics\propertiess\obj\Debug\propertiess.pdb

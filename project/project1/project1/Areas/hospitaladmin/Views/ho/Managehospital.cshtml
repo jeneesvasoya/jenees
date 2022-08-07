@@ -1,0 +1,79 @@
+﻿@model IEnumerable<project1.EDM.Hospital>
+
+@{
+    ViewBag.Title = "Managehospital";
+    Layout = "~/Areas/hospitaladmin/Views/Shared/hospital_LayoutPage1.cshtml";
+}
+
+<h2>Managehospital</h2>
+
+<br />
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.hospital_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.h_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.hc_number)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.h_email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.h_password)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.h_address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.state_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.city_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.h_profile_image)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.hospital_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.h_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.hc_number)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.h_email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.h_password)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.h_address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.State.state_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.City.city_name)
+        </td>
+        <td>
+            <img src="~/Docs/Hospitals/@item.h_profile_image" width="50" height="50" alt="Alternate Text" />
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "HospitalEdit", new {  id=item.hospital_id }) |
+            @Html.ActionLink("Delete", "HospitalDelete", new {  id=item.hospital_id })
+        </td>
+    </tr>
+}
+
+</table>

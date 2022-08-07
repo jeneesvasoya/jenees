@@ -1,0 +1,62 @@
+﻿@model IEnumerable<project1.EDM.Appointment>
+
+@{
+    ViewBag.Title = "ManageAppointment";
+    Layout = "~/Areas/hospitaladmin/Views/Shared/hospital_LayoutPage1.cshtml";
+}
+
+<h2>ManageAppointment</h2>
+
+<br />
+<br />
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.appointment_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.a_date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.hospital_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.doctor_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.patient_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.appointment_status)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.appointment_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.a_date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Hospital.h_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Doctor.df_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Patient.pf_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.appointment_status)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "AppoEdit", new {  id=item.appointment_id }) |
+            @Html.ActionLink("Delete", "AppoDelete", new {  id=item.appointment_id})
+        </td>
+    </tr>
+}
+
+</table>

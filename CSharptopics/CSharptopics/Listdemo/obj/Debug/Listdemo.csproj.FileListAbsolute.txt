@@ -1,0 +1,7 @@
+C:\Users\MAHADEV\Desktop\jd_mahadev\jd\CSharptopics\CSharptopics\Listdemo\bin\Debug\Listdemo.exe.config
+C:\Users\MAHADEV\Desktop\jd_mahadev\jd\CSharptopics\CSharptopics\Listdemo\bin\Debug\Listdemo.exe
+C:\Users\MAHADEV\Desktop\jd_mahadev\jd\CSharptopics\CSharptopics\Listdemo\bin\Debug\Listdemo.pdb
+C:\Users\MAHADEV\Desktop\jd_mahadev\jd\CSharptopics\CSharptopics\Listdemo\obj\Debug\Listdemo.csproj.AssemblyReference.cache
+C:\Users\MAHADEV\Desktop\jd_mahadev\jd\CSharptopics\CSharptopics\Listdemo\obj\Debug\Listdemo.csproj.CoreCompileInputs.cache
+C:\Users\MAHADEV\Desktop\jd_mahadev\jd\CSharptopics\CSharptopics\Listdemo\obj\Debug\Listdemo.exe
+C:\Users\MAHADEV\Desktop\jd_mahadev\jd\CSharptopics\CSharptopics\Listdemo\obj\Debug\Listdemo.pdb

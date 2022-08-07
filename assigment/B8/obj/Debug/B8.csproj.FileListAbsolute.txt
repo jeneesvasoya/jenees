@@ -1,0 +1,7 @@
+C:\Users\MAHADEV\source\repos\assigment\B8\bin\Debug\B8.exe.config
+C:\Users\MAHADEV\source\repos\assigment\B8\bin\Debug\B8.exe
+C:\Users\MAHADEV\source\repos\assigment\B8\bin\Debug\B8.pdb
+C:\Users\MAHADEV\source\repos\assigment\B8\obj\Debug\B8.csproj.AssemblyReference.cache
+C:\Users\MAHADEV\source\repos\assigment\B8\obj\Debug\B8.csproj.CoreCompileInputs.cache
+C:\Users\MAHADEV\source\repos\assigment\B8\obj\Debug\B8.exe
+C:\Users\MAHADEV\source\repos\assigment\B8\obj\Debug\B8.pdb

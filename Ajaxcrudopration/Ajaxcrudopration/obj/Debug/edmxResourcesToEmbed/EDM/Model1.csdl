@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="employeedetailsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="companydetail">
+    <Key>
+      <PropertyRef Name="companyid" />
+    </Key>
+    <Property Name="companyid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="empid" Type="Int32" />
+    <Property Name="company_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="company_location" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="company_city" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="employee" Relationship="Self.FK_companydetails_employee1" FromRole="companydetails" ToRole="employee" />
+  </EntityType>
+  <EntityType Name="employee">
+    <Key>
+      <PropertyRef Name="empid" />
+    </Key>
+    <Property Name="empid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="salary" Type="Int32" />
+    <Property Name="address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="hobbies" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="city" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="pincode" Type="Int32" />
+    <NavigationProperty Name="companydetails" Relationship="Self.FK_companydetails_employee1" FromRole="employee" ToRole="companydetails" />
+  </EntityType>
+  <Association Name="FK_companydetails_employee1">
+    <End Role="employee" Type="Self.employee" Multiplicity="0..1" />
+    <End Role="companydetails" Type="Self.companydetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="employee">
+        <PropertyRef Name="empid" />
+      </Principal>
+      <Dependent Role="companydetails">
+        <PropertyRef Name="empid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="employeedetailsEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="companydetails" EntityType="Self.companydetail" />
+    <EntitySet Name="employees" EntityType="Self.employee" />
+    <AssociationSet Name="FK_companydetails_employee1" Association="Self.FK_companydetails_employee1">
+      <End Role="employee" EntitySet="employees" />
+      <End Role="companydetails" EntitySet="companydetails" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

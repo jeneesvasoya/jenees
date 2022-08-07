@@ -1,0 +1,7 @@
+C:\Users\MAHADEV\source\repos\assigment\B12\bin\Debug\B12.exe.config
+C:\Users\MAHADEV\source\repos\assigment\B12\bin\Debug\B12.exe
+C:\Users\MAHADEV\source\repos\assigment\B12\bin\Debug\B12.pdb
+C:\Users\MAHADEV\source\repos\assigment\B12\obj\Debug\B12.csproj.CoreCompileInputs.cache
+C:\Users\MAHADEV\source\repos\assigment\B12\obj\Debug\B12.exe
+C:\Users\MAHADEV\source\repos\assigment\B12\obj\Debug\B12.pdb
+C:\Users\MAHADEV\source\repos\assigment\B12\obj\Debug\B12.csproj.AssemblyReference.cache

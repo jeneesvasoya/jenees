@@ -1,0 +1,7 @@
+C:\Users\MAHADEV\Desktop\jd_mahadev\jd\CSharptopics\CSharptopics\Dictionaryss\bin\Debug\Dictionaryss.exe.config
+C:\Users\MAHADEV\Desktop\jd_mahadev\jd\CSharptopics\CSharptopics\Dictionaryss\bin\Debug\Dictionaryss.exe
+C:\Users\MAHADEV\Desktop\jd_mahadev\jd\CSharptopics\CSharptopics\Dictionaryss\bin\Debug\Dictionaryss.pdb
+C:\Users\MAHADEV\Desktop\jd_mahadev\jd\CSharptopics\CSharptopics\Dictionaryss\obj\Debug\Dictionaryss.csproj.AssemblyReference.cache
+C:\Users\MAHADEV\Desktop\jd_mahadev\jd\CSharptopics\CSharptopics\Dictionaryss\obj\Debug\Dictionaryss.csproj.CoreCompileInputs.cache
+C:\Users\MAHADEV\Desktop\jd_mahadev\jd\CSharptopics\CSharptopics\Dictionaryss\obj\Debug\Dictionaryss.exe
+C:\Users\MAHADEV\Desktop\jd_mahadev\jd\CSharptopics\CSharptopics\Dictionaryss\obj\Debug\Dictionaryss.pdb

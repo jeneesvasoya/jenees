@@ -1,0 +1,6 @@
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I17\bin\Debug\I17.exe.config
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I17\bin\Debug\I17.exe
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I17\bin\Debug\I17.pdb
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I17\obj\Debug\I17.csproj.CoreCompileInputs.cache
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I17\obj\Debug\I17.exe
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I17\obj\Debug\I17.pdb

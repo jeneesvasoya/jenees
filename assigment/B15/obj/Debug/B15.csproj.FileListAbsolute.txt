@@ -1,0 +1,6 @@
+C:\Users\MAHADEV\source\repos\assigment\B15\bin\Debug\B15.exe.config
+C:\Users\MAHADEV\source\repos\assigment\B15\bin\Debug\B15.exe
+C:\Users\MAHADEV\source\repos\assigment\B15\bin\Debug\B15.pdb
+C:\Users\MAHADEV\source\repos\assigment\B15\obj\Debug\B15.csproj.CoreCompileInputs.cache
+C:\Users\MAHADEV\source\repos\assigment\B15\obj\Debug\B15.exe
+C:\Users\MAHADEV\source\repos\assigment\B15\obj\Debug\B15.pdb

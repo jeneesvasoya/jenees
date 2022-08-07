@@ -1,0 +1,7 @@
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I14\bin\Debug\I14.exe.config
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I14\bin\Debug\I14.exe
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I14\bin\Debug\I14.pdb
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I14\obj\Debug\I14.csproj.AssemblyReference.cache
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I14\obj\Debug\I14.csproj.CoreCompileInputs.cache
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I14\obj\Debug\I14.exe
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I14\obj\Debug\I14.pdb

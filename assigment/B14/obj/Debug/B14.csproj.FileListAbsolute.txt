@@ -1,0 +1,14 @@
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\B14\bin\Debug\B14.exe.config
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\B14\bin\Debug\B14.exe
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\B14\bin\Debug\B14.pdb
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\B14\obj\Debug\B14.csproj.AssemblyReference.cache
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\B14\obj\Debug\B14.csproj.CoreCompileInputs.cache
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\B14\obj\Debug\B14.exe
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\B14\obj\Debug\B14.pdb
+C:\Users\MAHADEV\Desktop\jd_mahadev\jd\assigment\B14\bin\Debug\B14.exe.config
+C:\Users\MAHADEV\Desktop\jd_mahadev\jd\assigment\B14\bin\Debug\B14.exe
+C:\Users\MAHADEV\Desktop\jd_mahadev\jd\assigment\B14\bin\Debug\B14.pdb
+C:\Users\MAHADEV\Desktop\jd_mahadev\jd\assigment\B14\obj\Debug\B14.csproj.AssemblyReference.cache
+C:\Users\MAHADEV\Desktop\jd_mahadev\jd\assigment\B14\obj\Debug\B14.csproj.CoreCompileInputs.cache
+C:\Users\MAHADEV\Desktop\jd_mahadev\jd\assigment\B14\obj\Debug\B14.exe
+C:\Users\MAHADEV\Desktop\jd_mahadev\jd\assigment\B14\obj\Debug\B14.pdb

@@ -1,0 +1,6 @@
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I2\bin\Debug\I2.exe.config
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I2\bin\Debug\I2.exe
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I2\bin\Debug\I2.pdb
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I2\obj\Debug\I2.csproj.CoreCompileInputs.cache
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I2\obj\Debug\I2.exe
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I2\obj\Debug\I2.pdb

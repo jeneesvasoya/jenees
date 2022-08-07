@@ -1,0 +1,7 @@
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I8\bin\Debug\I8.exe.config
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I8\bin\Debug\I8.exe
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I8\bin\Debug\I8.pdb
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I8\obj\Debug\I8.csproj.AssemblyReference.cache
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I8\obj\Debug\I8.csproj.CoreCompileInputs.cache
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I8\obj\Debug\I8.exe
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I8\obj\Debug\I8.pdb

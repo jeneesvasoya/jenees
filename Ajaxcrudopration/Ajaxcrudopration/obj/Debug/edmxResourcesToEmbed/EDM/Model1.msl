@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="employeedetailsModelStoreContainer" CdmEntityContainer="employeedetailsEntities">
+    <EntitySetMapping Name="companydetails">
+      <EntityTypeMapping TypeName="employeedetailsModel.companydetail">
+        <MappingFragment StoreEntitySet="companydetails">
+          <ScalarProperty Name="companyid" ColumnName="companyid" />
+          <ScalarProperty Name="empid" ColumnName="empid" />
+          <ScalarProperty Name="company_name" ColumnName="company_name" />
+          <ScalarProperty Name="company_location" ColumnName="company_location" />
+          <ScalarProperty Name="company_city" ColumnName="company_city" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="employees">
+      <EntityTypeMapping TypeName="employeedetailsModel.employee">
+        <MappingFragment StoreEntitySet="employee">
+          <ScalarProperty Name="empid" ColumnName="empid" />
+          <ScalarProperty Name="fname" ColumnName="fname" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="salary" ColumnName="salary" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="hobbies" ColumnName="hobbies" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="pincode" ColumnName="pincode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

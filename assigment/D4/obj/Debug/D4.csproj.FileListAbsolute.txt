@@ -1,0 +1,7 @@
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\D4\bin\Debug\D4.exe.config
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\D4\bin\Debug\D4.exe
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\D4\bin\Debug\D4.pdb
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\D4\obj\Debug\D4.csproj.AssemblyReference.cache
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\D4\obj\Debug\D4.csproj.CoreCompileInputs.cache
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\D4\obj\Debug\D4.exe
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\D4\obj\Debug\D4.pdb

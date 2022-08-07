@@ -1,0 +1,6 @@
+C:\Users\MAHADEV\Desktop\jd_mahadev\jd\CSharptopics\CSharptopics\interfacess\bin\Debug\interfacess.exe.config
+C:\Users\MAHADEV\Desktop\jd_mahadev\jd\CSharptopics\CSharptopics\interfacess\bin\Debug\interfacess.exe
+C:\Users\MAHADEV\Desktop\jd_mahadev\jd\CSharptopics\CSharptopics\interfacess\bin\Debug\interfacess.pdb
+C:\Users\MAHADEV\Desktop\jd_mahadev\jd\CSharptopics\CSharptopics\interfacess\obj\Debug\interfacess.csproj.CoreCompileInputs.cache
+C:\Users\MAHADEV\Desktop\jd_mahadev\jd\CSharptopics\CSharptopics\interfacess\obj\Debug\interfacess.exe
+C:\Users\MAHADEV\Desktop\jd_mahadev\jd\CSharptopics\CSharptopics\interfacess\obj\Debug\interfacess.pdb

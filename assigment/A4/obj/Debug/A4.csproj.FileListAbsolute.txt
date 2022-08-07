@@ -1,0 +1,6 @@
+C:\Users\MAHADEV\source\repos\assigment\A4\bin\Debug\A4.exe.config
+C:\Users\MAHADEV\source\repos\assigment\A4\bin\Debug\A4.exe
+C:\Users\MAHADEV\source\repos\assigment\A4\bin\Debug\A4.pdb
+C:\Users\MAHADEV\source\repos\assigment\A4\obj\Debug\A4.csproj.CoreCompileInputs.cache
+C:\Users\MAHADEV\source\repos\assigment\A4\obj\Debug\A4.exe
+C:\Users\MAHADEV\source\repos\assigment\A4\obj\Debug\A4.pdb

@@ -1,0 +1,7 @@
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I10\bin\Debug\I10.exe.config
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I10\bin\Debug\I10.exe
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I10\bin\Debug\I10.pdb
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I10\obj\Debug\I10.csproj.AssemblyReference.cache
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I10\obj\Debug\I10.csproj.CoreCompileInputs.cache
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I10\obj\Debug\I10.exe
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\I10\obj\Debug\I10.pdb

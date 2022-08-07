@@ -1,0 +1,7 @@
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\B5\bin\Debug\B5.exe.config
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\B5\bin\Debug\B5.exe
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\B5\bin\Debug\B5.pdb
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\B5\obj\Debug\B5.csproj.AssemblyReference.cache
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\B5\obj\Debug\B5.csproj.CoreCompileInputs.cache
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\B5\obj\Debug\B5.exe
+C:\Users\MAHADEV\Desktop\jd_mahadev\assigment\B5\obj\Debug\B5.pdb

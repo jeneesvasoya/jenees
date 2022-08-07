@@ -1,0 +1,145 @@
+﻿@model project1.EDM.Patient
+
+@{
+    ViewBag.Title = "UserEdit";
+    Layout = "~/Areas/admin/Views/Shared/admin_LayoutPage1.cshtml";
+}
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+<h2>UserEdit</h2>
+<div class="container">
+    <div class="col-md-6">
+        @using (Html.BeginForm("UserEdit", "jd", FormMethod.Post, new { @id = "form", @enctype = "multipart/form-data" }))
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-horizontal">
+                <h4>Patient</h4>
+                <hr />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group" hidden>
+                    @Html.LabelFor(model => model.patient_id, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.patient_id, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.patient_id, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.pf_name, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(model => model.pf_name, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.pf_name, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.pl_name, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(model => model.pl_name, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.pl_name, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.p_email, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(model => model.p_email, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.p_email, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.pc_number, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(model => model.pc_number, new { @class = "form-control", @type = "number" })
+                        @Html.ValidationMessageFor(model => model.pc_number, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.p_address, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.TextAreaFor(model => model.p_address, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.p_address, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.p_password, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(model => model.p_password, new { @class = "form-control", @type = "password" })
+                        @Html.ValidationMessageFor(model => model.p_password, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.state_id, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.DropDownListFor(model => model.state_id, ViewBag.states as List<SelectListItem>, "---Select State---", new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.state_id, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.city_id, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        <select id="city_id" name="city_id" class="form-control" required>
+                            <option>---Select City---</option>
+                        </select>
+                        @Html.ValidationMessageFor(model => model.city_id, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.p_profile_image, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        <input type="file" id="p_profile_image" name="p_profile_image" class="form-control" required />
+                        @Html.ValidationMessageFor(model => model.p_profile_image, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.p_gender, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        <br />
+                        Male   @Html.RadioButtonFor(model => model.p_gender, "Male", new { @id = "p_genderM" })<br />
+                        FeMale   @Html.RadioButtonFor(model => model.p_gender, "FeMale", new { @id = "p_genderF" })<br />
+                        Others   @Html.RadioButtonFor(model => model.p_gender, "Others", new { @id = "p_genderO" })
+                        @Html.ValidationMessageFor(model => model.p_gender, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Save" class="btn btn-default" />
+                    </div>
+                </div>
+            </div>
+        }
+
+        <div>
+            @Html.ActionLink("Back to List", "ManageUser")
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $("#state_id").change(function () {
+            $.ajax({
+                url: "/admin/jd/Getcitybystateid",
+                type: "GET",
+                data: { id: $("#state_id").val() },
+                dataType: "json",
+                success: function (cities) {
+                    $("#city_id").empty();
+                    $("#city_id").append(" <option>---Select City---</option>");
+                    $.each(cities, function (key, item) {
+                        $("#city_id").append("<option value='" + item.city_id + "'>" + item.city_name + "</option>");
+                    });
+                }
+            });
+        });
+    });
+</script>

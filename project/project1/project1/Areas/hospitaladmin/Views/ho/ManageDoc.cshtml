@@ -1,0 +1,80 @@
+﻿@model IEnumerable<project1.EDM.Doctor>
+
+@{
+    ViewBag.Title = "ManageDoc";
+    Layout = "~/Areas/hospitaladmin/Views/Shared/hospital_LayoutPage1.cshtml";
+}
+
+<h2>ManageDoc</h2>
+
+<br />
+<br />
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.doctor_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.df_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dl_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.d_email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dc_number)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Degree_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.speciality_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.hospital_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.d_profile_image)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.doctor_id)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.df_name)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.dl_name)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.d_email)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.dc_number)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Degree.Degree_name)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.speciality.speciality_name)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Hospital.h_name)
+    </td>
+    <td>
+        <img src="~/Docs/doctors/@item.d_profile_image" width="50" height="50" alt="Alternate Text" />
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "DocEdit", new { id = item.doctor_id }) |
+        @Html.ActionLink("Delete", "DocDelete", new { id = item.doctor_id })
+    </td>
+</tr>
+}
+
+</table>

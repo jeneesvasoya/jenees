@@ -1,0 +1,66 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Modern Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- Bootstrap Core CSS -->
+    <link href="~/Areas/hospitaladmin/web/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+
+    <!-- Custom CSS -->
+    <link href="~/Areas/hospitaladmin/web/css/style.css" rel='stylesheet' type='text/css' />
+    <!-- Graph CSS -->
+    <link href="~/Areas/hospitaladmin/web/css/lines.css" rel='stylesheet' type='text/css' />
+    <link href="~/Areas/hospitaladmin/web/css/font-awesome.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="~/Areas/hospitaladmin/web/js/jquery.min.js"></script>
+    <!----webfonts--->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+    <!---//webfonts--->
+    <!-- Nav CSS -->
+    <link href="~/Areas/hospitaladmin/web/css/custom.css" rel="stylesheet">
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="~/Areas/hospitaladmin/web/js/metisMenu.min.js"></script>
+    <script src="~/Areas/hospitaladmin/web/js/custom.js"></script>
+    <!-- Graph JavaScript -->
+    <script src="~/Areas/hospitaladmin/web/js/d3.v3.js"></script>
+    <script src="~/Areas/hospitaladmin/web/js/rickshaw.js"></script>
+</head>
+<body id="login">
+
+    <br />
+    <br />
+    <br />
+    <h2 class="form-heading">Login Now</h2> 
+    <div class="app-cam">
+        @using (Html.BeginForm())
+        {
+            <input type="text" name="email" class="text" value="E-mail address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail address';}">
+            <input type="password" name="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}">
+            <p>
+                <span class="text-danger">@ViewBag.loginer</span>
+            </p>
+            <div class="submit"><input type="submit" onclick="myFunction()" value="Login"></div>
+            <div class="login-social-link">
+              
+            </div>
+            <ul class="new">
+                <li class="new_left"><p><a href="#">Forgot Password ?</a></p></li>
+            </ul>
+        }
+    </div>
+    <div class="copy_layout login">
+        <p>Copyright &copy; 2022 Modern. All Rights Reserved | Design by Mahadev</p>
+    </div>
+</body>
+</html>
